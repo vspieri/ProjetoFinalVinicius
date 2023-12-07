@@ -1,0 +1,39 @@
+﻿@model ProjetoFinalVinicius.Models.ProcedimentoRealizado
+
+@{
+    Layout = null;
+}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exame</title>
+    <link rel="stylesheet" href="~/css/Style.css">
+</head>
+<body>
+    <div class="logo">
+        <div class="tex">
+            <img src="~/Img/logo.png" alt="">
+        </div>
+        <div>
+            <h1>clinica doutor piroca</h1>
+        </div>
+    </div>
+    <div class="div-1">
+        <h3>Nome do Paciente: @Html.DisplayFor(model => model.Cliente.ClienteNome)</h3>
+        <h3>Sexo: @Html.DisplayFor(model => model.Cliente.ClienteSexo) </h3>
+        <h3>Cpf: @Html.DisplayFor(model => model.Cliente.ClienteCpf)</h3>
+        <h3>Clínica: Ps</h3>
+    </div>
+    <div class="div-2">
+        <Span>Data do Exame: @Html.DisplayFor(model => model.DataRealizadoId)</Span>
+    </div>
+    <div class="div-3">
+        <Span>Exame: @Html.DisplayFor(model => model.Procedimento.ProcedimentoNome)</Span>
+        <span>Local do Exame: @Html.DisplayFor(model => model.LocalRealizacao.LocalRealizacaoNome)</span>
+
+    </div>
+    <div class="div-4">
+        <span>Obseraçoes: @Html.DisplayFor(model => model.ObservacaoRealizadoId)</span>
+    </div>
+    <span class="fim">Responsavel pelo Exame: @Html.DisplayFor(model => model.Colaborador.ColaboradorNome)</span>
+</body>

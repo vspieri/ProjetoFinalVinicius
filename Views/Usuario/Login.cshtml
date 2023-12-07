@@ -1,0 +1,33 @@
+﻿@model ProjetoFinalVinicius.Models.Usuario
+@{
+    Layout = null;
+}
+<head>
+    <link rel="stylesheet" href="~/css/Stylelogin.css">
+</head>
+<div>
+
+    <form class="form" asp-action="Login">
+        <div class="box">
+            <div>
+                <label asp-for="Email"></label>
+                <br />
+                <input asp-for="Email" />
+                <br />
+            </div>
+            <div>
+                <label asp-for="Senha"></label>
+                <br />
+                <input asp-for="Senha" />
+                <br />
+            </div>
+            <br />
+            <h4>@ViewBag.Mensagem</h4>
+            <br />
+            <div class="botao">
+                <input type="submit" value="Entrar" />
+            </div>
+        </div>
+    </form>
+
+</div>

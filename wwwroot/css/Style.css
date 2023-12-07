@@ -1,0 +1,59 @@
+﻿span {
+    font-style: italic;
+}
+
+.div-1 {
+    padding-top: 20px;
+    display: flex;
+    column-gap: 10px;
+    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.div-2 span {
+    padding-bottom: 20px;
+    padding-top: 40px;
+    text-align: end;
+    display: block;
+    font-size: 28px;
+}
+
+.div-3 span {
+    padding-bottom: 20px;
+    display: block;
+    font-size: 28px;
+}
+
+.div-4 {
+    border-top: 5px;
+    border-bottom: 5px;
+    border-left: 0px;
+    border-right: 0px;
+    border-style: solid;
+    border-color: black;
+    font-size: 28px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+    .div-4 span {
+        display: block;
+        padding: 5px;
+    }
+
+.fim {
+    font-size: 28px;
+}
+
+.logo {
+    display: flex;
+    font-size: 33px;
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+    background-color: purple;
+}
